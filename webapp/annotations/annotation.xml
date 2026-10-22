@@ -92,6 +92,10 @@
                             <PropertyValue Property="Label" String="QuantityPerUnit"/>
                             <PropertyValue Property="Value" Path="QuantityPerUnit"/>
                         </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="UnitsOnOrder"/>
+                            <PropertyValue Property="Value" Path="UnitsOnOrder"/>
+                        </Record>
                     </Collection>
                 </Annotation>
             </Annotations>
