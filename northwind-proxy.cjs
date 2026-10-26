@@ -58,11 +58,11 @@ http.createServer((req, res) => {
   upstream.on("error", (error) => {
     console.error(error.message);
     res.writeHead(502);
-    res.end("Falha ao acessar o Northwind");
+    res.end("Falha ao acessar o Seriço OData upstream.");
   });
 
   req.pipe(upstream);
 }).listen(8081, "127.0.0.1", () => {
-  console.log("Proxy Northwind em http://127.0.0.1:8081");
+  console.log("Proxy Odata Service iniciando em http://127.0.0.1:8081");
   if (process.send) process.send("ready");
 });
