@@ -24,7 +24,7 @@
         }
       },
       "mainService": {
-        "uri": "/V4/Northwind/Northwind.svc/",
+        "uri": "/odata/v4/catalog/",
         "type": "OData",
         "settings": {
           "annotations": [

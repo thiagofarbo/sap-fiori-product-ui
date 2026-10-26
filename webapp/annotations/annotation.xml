@@ -2,13 +2,12 @@
     <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/UI.xml">
         <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/>
     </edmx:Reference>
-    <edmx:Reference Uri="/V4/Northwind/Northwind.svc/$metadata">
-        <edmx:Include Namespace="NorthwindModel"/>
-        <edmx:Include Namespace="ODataWebV4.Northwind.Model"/>
+    <edmx:Reference Uri="/odata/v4/catalog/$metadata">
+        <edmx:Include Namespace="CatalogService"/>
     </edmx:Reference>
     <edmx:DataServices>
         <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="local">
-            <Annotations Target="NorthwindModel.Product">
+            <Annotations Target="CatalogService.Products">
                 <Annotation Term="UI.FieldGroup" Qualifier="GeneratedGroup">
                     <Record Type="UI.FieldGroupType">
                         <PropertyValue Property="Data">

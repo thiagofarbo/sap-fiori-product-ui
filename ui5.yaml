@@ -16,8 +16,8 @@ server:
             - /test-resources
           url: https://ui5.sap.com
         backend:
-          - path: /V4
-            url: http://127.0.0.1:8081
+          - path: /odata
+            url: http://127.0.0.1:8082
     - name: fiori-tools-appreload
       afterMiddleware: compression
       configuration:
